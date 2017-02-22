@@ -9,7 +9,7 @@ import java.util.Properties;
  *
  * @author p.zhoidz.
  */
-public class Settings {
+public final class Settings {
     private static final String CONFIGURATION_FILE = "configuration.properties";
     private static final String BASE_URL_PROP = "base.url";
     private static final String XPATH_PROP = "result.xpath";

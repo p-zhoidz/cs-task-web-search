@@ -11,6 +11,11 @@ public class SearchProperties {
     private Integer maxResults;
     private String attributeXPath;
 
+    /**
+     * Get search properties builder object.
+     *
+     * @return {@link Builder} instance.
+     */
     public static Builder builder() {
         return new SearchProperties().new Builder();
     }
@@ -46,7 +51,7 @@ public class SearchProperties {
     /**
      * {@link SearchProperties} class builder.
      */
-    public class Builder {
+    public final class Builder {
 
         /**
          * Private constructor.
@@ -58,6 +63,7 @@ public class SearchProperties {
          * Sets the searchUrl.
          *
          * @param searchUrl the value to be set
+         * @return current {@link Builder} instance.
          */
         public Builder setSearchUrl(String searchUrl) {
             SearchProperties.this.searchUrl = searchUrl;
@@ -69,6 +75,7 @@ public class SearchProperties {
          * Sets the elementXPath.
          *
          * @param elementXPath the value to be set
+         * @return current {@link Builder} instance.
          */
         public Builder setElementXPath(String elementXPath) {
             SearchProperties.this.elementXPath = elementXPath;
@@ -81,6 +88,7 @@ public class SearchProperties {
          * Sets the maxResults.
          *
          * @param maxResults the value to be set
+         * @return current {@link Builder} instance.
          */
         public Builder setMaxResults(Integer maxResults) {
             SearchProperties.this.maxResults = maxResults;
@@ -92,6 +100,7 @@ public class SearchProperties {
          * Sets the attributeXPath.
          *
          * @param attributeXPath the value to be set
+         * @return current {@link Builder} instance.
          */
         public Builder setAttributeXPath(String attributeXPath) {
             SearchProperties.this.attributeXPath = attributeXPath;
